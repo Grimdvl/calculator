@@ -1,0 +1,19 @@
+/* 1) Calculator */
+input {
+    height: 50px;
+    width: 250px;
+}
+.math__sign {
+    height: 50px;
+    width: 50px;
+}
+button {
+    height: 50px;
+    width: 250px;
+}
+output {
+    display: inline;
+    height: 50px;
+    width: 50px;
+}
+

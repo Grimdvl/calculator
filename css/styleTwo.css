@@ -1,0 +1,108 @@
+/* 2) Calculator */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: block;
+}
+
+.calculator {
+    background: black;
+    width: 320px;
+    height: 600px;
+    border-radius: 20px;
+    border-color: black;
+    border: solid;
+    margin: 100px auto;
+}
+.output {
+    border-radius: 0%;
+    width: 100%;
+    /* margin-bottom: 10px; */
+}
+.output__holder {
+    height: 30px;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: right;
+    opacity: 0.5;
+    width: 100%;
+    padding: 0 20px;
+    margin: 10px 0;
+    color: white;
+    background: black;
+}
+.output__screen {
+    margin-top: 10px;
+    padding: 0 20px;
+    height: 60px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
+    color: white;
+    background: black;
+}
+.output__screen:focus {
+    border: none;
+    outline: none;
+}
+.buttons {
+    margin: 0px auto;
+    width: 300px;
+    height: 380px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
+button {
+    border-radius: 100%;
+    font-size: 30px;
+    font-weight: 300;
+    background: grey;
+    color: white;
+}
+.wrapper {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.services {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    column-gap: 10px;
+}
+.services__item {
+    width: 36px;
+    height: 36px;
+    font-size: 1.75em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.backspace {
+    width: 36px;
+    height: 36px;
+    font-size: 1.75em;
+    cursor: pointer;
+    justify-content: flex-end;
+}
+
+.divider {
+    height: 2px;
+    width: 90%;
+    opacity: 0.5;
+    background: black;
+    margin: 20px auto;
+    /* padding: 0px 10px; */
+}
