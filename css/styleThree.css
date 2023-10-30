@@ -89,7 +89,7 @@ img {
     border-radius: 100%;
     font-size: 30px;
     font-weight: 300;
-    background: #171717;
+    background-color: #171717;
     color: #f9f9f9;
     border: none;
     cursor: pointer;
@@ -137,7 +137,7 @@ img {
 .divider {
     height: 2px;
     width: 90%;
-    background: #151515;
+    background: #171717;
     margin: 15px auto;
 }
 .services {

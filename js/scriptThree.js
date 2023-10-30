@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function calculator () {
         let result;
+        
 
-        input = input.value;
-        console.log(input);
+        result = input.value;
+        console.log(result = input.value);
     }
 
-    input.addEventListener('input', calculator);
 });
