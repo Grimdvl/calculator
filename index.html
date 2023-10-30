@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samsung Calculator</title>
     <!-- <link rel="stylesheet" href="css/styleOne.css"> -->
-    <link rel="stylesheet" href="css/styleTwo.css">
+    <link rel="stylesheet" href="css/styleThree.css">
 </head>
 <body>
     <!-- <input class="number__one" type="text" name="num1">
@@ -15,45 +15,54 @@
     <button class="btn" name="btn">Calc!</button>
     <div class="output"></div> -->
 
+    <img src="calculator.jpg" alt="calculator">
     <div class="calculator">
-        <div class="output">
-            <input dir="rtl" class="output__screen" type="text" name="input">
-            <p class="output__holder"></p>
+        <div class="calculator__display">
+            <span class="calculator__display-input">(75+25)</span>
+            <span class="calculator__display-output">100</span>
         </div>
-        <div class="wrapper">
+        <div class="calculator__body">
             <div class="services">
-                <div class="services__item history"><ion-icon name="time-outline"></ion-icon></div>
-                <div class="services__item converter"><ion-icon name="cog-outline"></ion-icon></div>
-                <div class="services__item formuls"><ion-icon name="construct-outline"></ion-icon></div>
+                <div class="services-item history">
+                    <ion-icon name="time-outline"></ion-icon>
+                </div>
+                <div class="services-item converter">
+                    <ion-icon name="cog-outline"></ion-icon>
+                </div>
+                <div class="services-item formuls">
+                    <ion-icon name="construct-outline"></ion-icon>
+                </div>
             </div>
-            <div class="backspace"><ion-icon name="arrow-undo-outline"></ion-icon></div>
+            <div class="backspace">
+                <ion-icon name="arrow-undo-outline"></ion-icon>
+            </div>
         </div>
         <div class="divider"></div>
-        <div class="buttons">
-            <button class="buttons__item clear">С</button>
-            <button class="buttons__item symbol brackets">()</button>
-            <button class="buttons__item symbol percent">%</button>
-            <button class="buttons__item symbol division">÷</button>
+        <div class="calculator__buttons">
+            <button class="calculator__buttons-item clear">С</button>
+            <button class="calculator__buttons-item symbol brackets">()</button>
+            <button class="calculator__buttons-item symbol percent">%</button>
+            <button class="calculator__buttons-item symbol division">÷</button>
 
-            <button class="buttons__item seven">7</button>
-            <button class="buttons__item eight">8</button>
-            <button class="buttons__item nine">9</button>
-            <button class="buttons__item symbol multiply">×</button>
+            <button class="calculator__buttons-item seven">7</button>
+            <button class="calculator__buttons-item eight">8</button>
+            <button class="calculator__buttons-item nine">9</button>
+            <button class="calculator__buttons-item symbol multiply">×</button>
 
-            <button class="buttons__item four">4</button>
-            <button class="buttons__item five">5</button>
-            <button class="buttons__item six">6</button>
-            <button class="buttons__item symbol minus">-</button>
+            <button class="calculator__buttons-item four">4</button>
+            <button class="calculator__buttons-item five">5</button>
+            <button class="calculator__buttons-item six">6</button>
+            <button class="calculator__buttons-item symbol minus">-</button>
 
-            <button class="buttons__item one">1</button>
-            <button class="buttons__item two">2</button>
-            <button class="buttons__item three">3</button>
-            <button class="buttons__item symbol plus">+</button>
+            <button class="calculator__buttons-item one">1</button>
+            <button class="calculator__buttons-item two">2</button>
+            <button class="calculator__buttons-item three">3</button>
+            <button class="calculator__buttons-item symbol plus">+</button>
             
-            <button class="buttons__item plus-minus">+/-</button>
-            <button class="buttons__item zero">0</button>
-            <button class="buttons__item dot">.</button>
-            <button class="buttons__item equals">=</button>
+            <button class="calculator__buttons-item plus-minus">+/-</button>
+            <button class="calculator__buttons-item zero">0</button>
+            <button class="calculator__buttons-item dot">.</button>
+            <button class="calculator__buttons-item equal">=</button>
         </div>
     </div>
 
