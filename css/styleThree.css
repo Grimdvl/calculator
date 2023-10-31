@@ -94,6 +94,9 @@ img {
     border: none;
     cursor: pointer;
 }
+.calculator__buttons-item:focus {
+    outline: none;
+}
 .symbol {
     color: #81cf50;
 }
