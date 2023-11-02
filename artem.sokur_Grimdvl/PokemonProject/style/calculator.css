@@ -24,12 +24,29 @@
   text-align: center;
 }
 
-.calculator__inputs-sign input {
-  width: 30px;
-  height: 30px;
+.calculator__inputs-sign select {
+  width: 60px;
+  height: 34px;
   line-height: 20px;
   font-size: 20px;
   text-align: center;
+  align-items: center;
+}
+
+.calculator__inputs--button button {
+  height: 34px;
+  width: 50px;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+.calculator__inputs-result span {
+  height: 34px;
+  line-height: 20px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .calculator__outputs {

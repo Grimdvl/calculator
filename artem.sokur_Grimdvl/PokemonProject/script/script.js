@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-    const stateInputs = {};
+    let stateInputs = {};
 
     // transform value to numbers
     const checkNumInputs = (selector) => {
@@ -28,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
         const firstNumber = document.querySelectorAll('#first-number');
         const sign = document.querySelectorAll('#sign');
         const secondNumber = document.querySelectorAll('#second-number');
+        const button = document.querySelectorAll('#button');
 
         const calculator = (event, elem, prop) => {
             checkNumInputs('#first-number');
@@ -36,21 +37,31 @@ window.addEventListener('DOMContentLoaded', () => {
 
             elem.forEach((item) => {
                 item.addEventListener(event, () => {
+                    const value = item.value;
                     switch (item.nodeName) {
-                        case 'firstNumber':
-                            console.log('firstNumber');
-                            state[prop] = item.value;
+                        case 'INPUT':
+                            if (item.id === 'first-number') {
+                                state[prop] = value;
+
+                            } else if (item.id === 'second-number') {
+                                state[prop] = value;
+
+                            }
                             break;
-                        case 'sign':
-                            console.log('sign');
-                            state[prop] = item.value;
+                        case 'SELECT':
+                            if (item.id === 'sign') {
+                                state[prop] = value;
+                                
+                            }
                             break;
-                        case 'secondNumber':
-                            console.log('secondNumber');
-                            state[prop] = item.value;
+                        case 'BUTTON':
+                            if (item.id === 'button') {
+                                state[prop] = value;
+
+                            }
                             break;
                         default:
-                            return 'Error';
+                            console.log('Error');
                     }
                     console.log(state);
                 });
@@ -58,8 +69,9 @@ window.addEventListener('DOMContentLoaded', () => {
         };
 
         calculator('input', firstNumber, 'firstNumber');
-        calculator('input', sign, 'sign');
+        calculator('change', sign, 'sign');
         calculator('input', secondNumber, 'secondNumber');
+        calculator('click', button, 'button');
     };
 
     changeState(stateInputs);

@@ -31,17 +31,34 @@
             <div class="calculator__inputs">
                 <div class="calculator__inputs-number">
                     <label for="first-number">Number 1</label>
-                    <input id="first-number" type="text" maxlength="2">
+                    <input class="first-number" id="first-number" type="text" maxlength="2">
                 </div>
 
                 <div class="calculator__inputs-sign">
-                    <label for="sign">Sign</label>
-                    <input id="sign" type="text" maxlength="1">
+                    <label for="sign">Math</label>
+                    <select name="sign" id="sign">
+                        <option value="sign" selected hidden>sign</option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                        <option value="%">%</option>
+                        <option value="**">**</option>
+                    </select>
                 </div>
 
                 <div class="calculator__inputs-number">
                     <label for="second-number">Number 2</label>
-                    <input id="second-number" type="text" maxlength="2">
+                    <input class="second-number" id="second-number" type="text" maxlength="2">
+                </div>
+
+                <div class="calculator__inputs--button">
+                    <label for="button">Button</label>
+                    <button id="button" type="button">=</button>
+                </div>
+                <div class="calculator__inputs-result">
+                    <label for="result">Result</label>
+                    <span id="result">10</span>
                 </div>
             </div>
 
@@ -50,7 +67,7 @@
                     <div class="output-first">5</div>
                     <div class="output-sign">+</div>
                     <div class="output-second">5</div>
-                    <div class="output-equel">=</div>
+                    <div class="output-equal">=</div>
                     <div class="output-result">10</div>
                 </h1>
 
